@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gazipur 360</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Noto Sans Bengali", sans-serif;
+    background: #f2f2f2;
+    color: #222;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.tagline {
+    color: #ccc;
+    margin-top: 5px;
+}
+
+nav {
+    background: #d40000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #000;
+}
+
+.breaking {
+    background: #000;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.breaking span {
+    background: #d40000;
+    padding: 7px 12px;
+    margin-right: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.main-news {
+    background: white;
+    border-top: 5px solid #d40000;
+    padding: 20px;
+}
+
+.main-news img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.main-news h1 {
+    font-size: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d40000;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.latest-title {
+    background: #000;
+    color: white;
+    padding: 12px;
+    margin-top: 30px;
+    border-left: 6px solid #d40000;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-bottom: 4px solid #d40000;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 40px;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        font-size: 32px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Gazipur 360</div>
+    <div class="tagline">গাজীপুরের খবর, সবার আগে</div>
+</header>
+
+<nav>
+    <a href="#">হোম</a>
+    <a href="#">গাজীপুর</a>
+    <a href="#">কালিয়াকৈর</a>
+    <a href="#">কালীগঞ্জ</a>
+    <a href="#">কাপাসিয়া</a>
+    <a href="#">শ্রীপুর</a>
+    <a href="#">টঙ্গী</a>
+    <a href="#">ভিডিও</a>
+</nav>
+
+<div class="breaking">
+    <span>ব্রেকিং নিউজ</span>
+    গাজীপুরের সর্বশেষ খবর জানতে চোখ রাখুন Gazipur 360-এ
+</div>
+
+<div class="container">
+
+    <section class="main-news">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80">
+
+        <h1>গাজীপুরের সর্বশেষ সংবাদ</h1>
+
+        <p>
+            গাজীপুর জেলার গুরুত্বপূর্ণ খবর, ঘটনা ও স্থানীয় সংবাদ
+            নিয়ে Gazipur 360-এর বিশেষ আয়োজন।
+        </p>
+
+        <a class="btn" href="#">বিস্তারিত পড়ুন</a>
+    </section>
+
+    <h2 class="latest-title">সর্বশেষ খবর</h2>
+
+    <div class="news-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>গাজীপুরে গুরুত্বপূর্ণ খবর</h3>
+                <p>গাজীপুরের আজকের সর্বশেষ সংবাদ ও আপডেট।</p>
+                <a class="btn" href="#">পড়ুন</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>কালিয়াকৈরের খবর</h3>
+                <p>কালিয়াকৈর এলাকার সর্বশেষ খবর ও ঘটনাবলি।</p>
+                <a class="btn" href="#">পড়ুন</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>কালীগঞ্জের খবর</h3>
+                <p>কালীগঞ্জের গুরুত্বপূর্ণ স্থানীয় সংবাদ।</p>
+                <a class="btn" href="#">পড়ুন</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>কাপাসিয়ার খবর</h3>
+                <p>কাপাসিয়া উপজেলার সর্বশেষ সংবাদ।</p>
+                <a class="btn" href="#">পড়ুন</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>শ্রীপুরের খবর</h3>
+                <p>শ্রীপুর এলাকার নতুন খবর ও আপডেট।</p>
+                <a class="btn" href="#">পড়ুন</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>টঙ্গীর খবর</h3>
+                <p>টঙ্গী এলাকার সর্বশেষ স্থানীয় সংবাদ।</p>
+                <a class="btn" href="#">পড়ুন</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Gazipur 360</p>
+    <p>গাজীপুরের খবর, সবার আগে</p>
+</footer>
+
+</body>
+</html>
